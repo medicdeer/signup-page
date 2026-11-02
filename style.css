@@ -8,13 +8,23 @@ body {
 }
 .box {
   margin: 32px 0;
-  border: 4px solid darkgreen;
+  border: 4px solid indigo;
   padding: 24px;
 }
 :root {
-  --brand: darkgreen;      /* make it */
+  --brand: indigo;      /* make it */
 }
 
 h1 {
   color: var(--brand);     /* use it */
+}
+
+.cta {
+  transition: background-color 0.3s;
+}
+
+.cta:hover,
+.cta:focus-visible {
+  background-color: lavendar;
+  outline: 3px solid black;
 }
